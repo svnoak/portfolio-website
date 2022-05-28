@@ -1,13 +1,14 @@
 function ProjectCard(props) {
+    const p = props.data;
     return(
-        <div>
+        <div key={p.name}>
             <img src="" alt="Project thumbnail"/>
             <div className="project-heading">
-                <h2>{props.title}</h2>
-                <a href={"https://github.com/svnoak/" + props.name} ><img src="githubImage" alt="Github Logo"/></a>
+                <h2>{p.title}</h2>
+                <a href={"https://github.com/svnoak/" + p.name} ><img src="githubImage" alt="Github Logo"/></a>
             </div>
-            <p>{props.description}</p>
-            <a href={"/" + props.name}>Read more</a>
+            <p>{p.description}</p>
+            <a href={"/" + p.name}>Read more</a>
         </div>
     )
 }

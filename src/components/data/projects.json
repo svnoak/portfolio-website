@@ -1,0 +1,20 @@
+[
+    {
+        "title":"FiRe Server",
+        "description":"File Renaming Server is a small program to rename files in batches. Back-end part of the project",
+        "name":"filrenaming-server",
+        "techstack": "['PHP']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum"
+    },
+    {
+        "title":"FiRe Client",
+        "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
+        "name":"FiRE-CLIENT",
+        "techstack": "['VueJS, CSS']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum"
+    }
+]
