@@ -1,14 +1,20 @@
 function ProjectCard(props) {
     const p = props.data;
+    const navClass = p.link ? "project-navigation between" : "project-navigation";
     return(
         <div className="project-card">
-            <img src="" alt="Project thumbnail"/>
+            <img src={require("../assets/images/"+p.image)} alt="Project thumbnail"/>
             <div className="project-heading">
                 <h2>{p.title}</h2>
-                <a href={"https://github.com/svnoak/" + p.name} ><img src="githubImage" alt="Github Logo"/></a>
+                <a href={"https://github.com/svnoak/" + p.name} ><img src={require("../assets/images/github-light.png")} alt="Github Logo"/></a>
             </div>
-            <p>{p.description}</p>
-            <button>Read more</button>
+            <div className="project-description">
+                <p>{p.description}</p>
+                <div className={navClass}>
+                {p.link && <a href={p.link}>To project site</a>}
+                <button>Read more</button>
+                </div>
+            </div>
         </div>
     )
 }

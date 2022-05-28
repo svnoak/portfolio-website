@@ -6,7 +6,9 @@
         "techstack": "['PHP']",
         "Use-case": "Lorem ipsum",
         "Role":"['Developer']",
-        "long-description":"Lorem ipsum"
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":""
     },
     {
         "title":"FiRe Client",
@@ -15,6 +17,8 @@
         "techstack": "['VueJS, CSS']",
         "Use-case": "Lorem ipsum",
         "Role":"['Developer']",
-        "long-description":"Lorem ipsum"
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":"link.com"
     }
 ]

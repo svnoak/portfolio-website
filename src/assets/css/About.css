@@ -1,0 +1,29 @@
+#about{
+    justify-items: center;
+    align-content: center;
+}
+
+#about .portrait-section {
+	grid-area: left;
+	height: 40vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+#about .description {
+	grid-area: right;
+	align-self: center;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#about .description p{
+    line-height: 1.7em;
+}
+
+#about .description button{
+    text-align: right;
+}

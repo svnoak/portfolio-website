@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import projects from "./data/projects.json";
+import "../assets/css/Project.css";
 
 function ProjectList() {
     return(

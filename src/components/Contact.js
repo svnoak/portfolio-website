@@ -7,7 +7,7 @@ function Contact(){
                 {contactList.map( contact => {
                     return(
                         <li key={contact.name}>
-                            <img src={contact.icon} alt="Icon"/>
+                            <img src={"assets/images/"+contact.icon} alt="Icon"/>
                             <a href={contact.link}>{contact.name}</a>
                         </li>
                     )

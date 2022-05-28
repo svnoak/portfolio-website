@@ -1,0 +1,43 @@
+#project-list {
+	grid-gap: 1vh;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.project-card{
+    align-self: center;
+    justify-self: center;
+    max-width: 30vw;
+}
+
+.project-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.project-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 2vh;
+}
+
+.project-heading img {
+	height: 1.5em;
+}
+
+.project-description{
+    margin: 2vh;
+}
+
+.project-navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.between{
+    justify-content: space-between;
+}

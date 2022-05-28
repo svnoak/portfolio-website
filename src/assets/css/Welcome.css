@@ -1,0 +1,51 @@
+#welcome {
+    justify-items: center;
+    align-content: center;
+}
+
+.welcome-navigation{
+    grid-area: left;
+    width: 80%;
+    align-self: center;
+}
+
+
+#welcome nav{
+    display: block;
+    position: static;
+}
+
+#welcome ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 50vh;
+}
+
+#welcome li{
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 5vh;
+    margin: 2vh 0;
+    width: 100%;
+}
+
+.portrait-section{
+    grid-area: right;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.portrait-section p:first-child{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
