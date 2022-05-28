@@ -1,5 +1,5 @@
 [
-    {"icon":"icon.png", "name":"kim-s@posteo.net", "link":"mailme:'kim-s@posteo.net"},
+    {"icon":"icon.png", "name":"kim-s@posteo.net", "link":"mailto:'kim-s@posteo.net"},
     {"icon":"icon.png", "name":"LinkedIN", "link":"https://linkedin.com"},
     {"icon":"icon.png", "name":"Xing", "link":"https://xing.com"},
     {"icon":"icon.png", "name":"GitHub", "link":"https://github.com/svnoak"},

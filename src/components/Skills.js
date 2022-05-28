@@ -1,7 +1,7 @@
 import skills from "./data/skills.json";
 function Skills() {
     return(
-        <section id="Skills">
+        <section id="skills">
             <h1>Skills</h1>
             <div>
                 <div>

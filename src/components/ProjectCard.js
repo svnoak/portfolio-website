@@ -1,7 +1,7 @@
 function ProjectCard(props) {
     const p = props.data;
     return(
-        <div>
+        <div className="project-card">
             <img src="" alt="Project thumbnail"/>
             <div className="project-heading">
                 <h2>{p.title}</h2>
