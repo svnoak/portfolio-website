@@ -8,7 +8,7 @@ function ProjectCard(props) {
                 <a href={"https://github.com/svnoak/" + p.name} ><img src="githubImage" alt="Github Logo"/></a>
             </div>
             <p>{p.description}</p>
-            <a href={"/" + p.name}>Read more</a>
+            <button>Read more</button>
         </div>
     )
 }
