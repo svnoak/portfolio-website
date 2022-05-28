@@ -5,7 +5,7 @@ function ProjectList() {
     return(
         <section id="projectList">
             <h1>Projects</h1>
-            {projects.map( project => <ProjectCard data={project} /> )}
+            {projects.map( project => <ProjectCard key={project.name} data={project} /> )}
         </section>
     )
 }

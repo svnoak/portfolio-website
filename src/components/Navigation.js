@@ -1,4 +1,5 @@
 function Navigation() {
+    return(
     <nav>
         <ul>
             <li>Start</li>
@@ -8,6 +9,7 @@ function Navigation() {
             <li>Contact</li>
         </ul>
     </nav>
+    )
 }
 
 export default Navigation;

@@ -7,7 +7,7 @@ function Welcome() {
                 <Navigation />
             </div>
             <div className="introduction">
-                <img src="./assets/images/portrait.png" alt="Picture of Kim smiling"/>
+                <img src="./assets/images/portrait.png" alt="Kim looking at the camera, smiling"/>
                 <div className="portrait-description">
                     <p>Hi, I'm Kim.</p>
                     <p>Pleased to meet you.</p>

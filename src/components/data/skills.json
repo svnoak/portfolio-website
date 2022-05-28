@@ -1,0 +1,39 @@
+[
+    {
+        "heading":"Dev",
+        "list": [
+            { "name": "HTML", "desc":"Lorem Ipsum" },
+            { "name": "CSS", "desc":"Lorem Ipsum" },
+            { "name": "Javascript", "desc":"Lorem Ipsum" },
+            { "name": "React", "desc":"Lorem Ipsum" },
+            { "name": "VueJS", "desc":"Lorem Ipsum" },
+            { "name": "PHP", "desc":"Lorem Ipsum" },
+            { "name": "SQL", "desc":"Lorem Ipsum" },
+            { "name": "Relationall databases", "desc":"Lorem Ipsum" },
+            { "name": "nginx", "desc":"Lorem Ipsum" },
+            { "name": "Linux", "desc":"Lorem Ipsum" },
+            { "name": "Basic cybersecurity", "desc":"Lorem Ipsum" },
+            { "name": "C#", "desc":"Lorem Ipsum" }
+        ]
+    },
+    {
+        "heading":"Past Roles",
+        "list": [
+            { "name": "Project Management", "desc":"Lorem Ipsum" },
+            { "name": "Economic administration", "desc":"Lorem Ipsum" },
+            { "name": "Server administrator", "desc":"Lorem Ipsum" },
+            { "name": "Human Resources", "desc":"Lorem Ipsum" },
+            { "name": "Volunteer management", "desc":"Lorem Ipsum" },
+            { "name": "Program coordinator", "desc":"Lorem Ipsum" }
+        ]
+    },
+    {
+        "heading": "Languages",
+        "list": [
+            { "name": "German", "desc":"Lorem Ipsum" },
+            { "name": "Swedish", "desc":"Lorem Ipsum" },
+            { "name": "English", "desc":"Lorem Ipsum" }
+        ]
+    }
+
+]
