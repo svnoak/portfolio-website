@@ -1,8 +1,8 @@
 function Welcome() {
     return(
-        <div id="welcome">
-            
-        </div>
+        <section id="welcome">
+
+        </section>
     )
 }
 
