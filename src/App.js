@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+import ProjectCard from './components/ProjectCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+      <h1>Projects</h1>
+      <ProjectCard title="FiRe Client"  description="File Renaming client is a small program to rename files in batches. Front-end part of the project" name="FiRE-CLIENT"/>
+      <ProjectCard title="FiRe Backend"  description="File Renaming client is a small program to rename files in batches. Back-end part of the project" name="filrenaming-server"/>
     </div>
   );
 }
