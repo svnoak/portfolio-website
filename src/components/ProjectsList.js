@@ -2,9 +2,9 @@ import ProjectCard from "./ProjectCard";
 import projects from "./data/projects.json";
 import "../assets/css/Project.css";
 
-function ProjectList() {
+function ProjectList(props) {
     return(
-        <section id="project-list">
+        <section id="project-list" ref={props.refs}>
             <h1>Projects</h1>
             {projects.map( project => <ProjectCard key={project.name} data={project} /> )}
         </section>

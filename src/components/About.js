@@ -1,8 +1,8 @@
 import "../assets/css/About.css";
 
-function About(){
+function About(props){
     return(
-        <section id="about">
+        <section id="about" ref={props.refs}>
             <h1>About me</h1>
             <div className="portrait-section">
                 <img src={require("../assets/images/portrait.jpeg")} alt="Kim looking at the camera, smiling"/>

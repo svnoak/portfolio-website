@@ -1,7 +1,7 @@
 import skills from "./data/skills.json";
-function Skills() {
+function Skills(props) {
     return(
-        <section id="skills">
+        <section id="skills" ref={props.refs}>
             <h1>Skills</h1>
             <div>
                 <div>

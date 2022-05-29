@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 function Navigation(props) {
-    const [open, setOpen] = useState(false);
-
-    const triggerNavigation = () => {
-        setOpen(!open);
-        if(open){
-            document.querySelector("nav").classList.add("open");
-        } else{
-            document.querySelector("nav").classList.remove("open");
-        }
-    }
-
+    const views = props.views;
     return(
     <nav className={props.class}>
         <ul>
-            <li onClick={triggerNavigation}>Start</li>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li className={views[0] ? "selected": ""}><a href="/#welcome">Start</a></li>
+            <li className={views[1] ? "selected": ""}><a href="/#about">About me</a></li>
+            <li className={views[2] ? "selected": ""}><a href="/#project-list">Projects</a></li>
+            <li className={views[3] ? "selected": ""}><a href="/#skills">Skills</a></li>
+            <li className={views[4] ? "selected": ""}><a href="/#contact">Contact</a></li>
         </ul>
     </nav>
     )

@@ -5,6 +5,11 @@
     --accent-trans:rgba(252, 231, 2, .2);
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,21 +22,52 @@ body{
     background-color: var(--dark-color);
 }
 
-.App > nav {
-	position: fixed;
-	top: 30vh;
-    transition: .2s ease-in-out;
-    z-index: 2;
+nav {
+	grid-area: left;
+	align-self: center;
+	display: block;
+	transition: all .2s ease-in-out, color 1ms ease-in-out;
+	width: 40vw;
+	justify-self: flex-start;
 }
 
-.App > nav > ul{
+nav ul li{
+    border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	height: 5vh;
+	margin: 2vh 0;
+	width: 100%;
+    list-style: none;
+    background-color: var(--accent-trans);
+    transition: all 300ms ease, border-radius 1ms, color 1ms;
+}
+
+nav ul li:hover,
+nav ul li:target{
+    background-color: var(--accent-full);
+    color: var(--dark-color);
+}
+
+nav.fixed {
+	position: fixed;
+	top: 30vh;
+    lefT: 5vw;
+    transition: .2s all ease-in-out, 1ms color ease-in-out;
+    z-index: 2;
+    width: 5vh;
+}
+
+nav.fixed > ul{
     display: flex;
     flex-direction: column;
     height: 50vh;
     justify-content: space-evenly;
 }
 
-.App > nav > ul li{
+nav.fixed > ul li{
     height: 5vh;
 	width: 5vh;
     border-radius: 100px;
@@ -42,26 +78,36 @@ body{
     align-items: center;
 }
 
-nav ul li{
-    list-style: none;
-    background-color: var(--accent-trans);
-    transition: all 300ms ease, border-radius 1ms;
-}
-
-nav ul li:hover,
-nav ul li:target{
-    background-color: var(--accent-full);
-    color: var(--dark-color);
-}
-
-.App > nav ul li:hover,
-.App > nav ul li:target{
+nav.fixed ul li:hover,
+nav.fixed ul li:target{
     cursor: pointer;
-    width: 30vh;
+    width: 30vh !important;
     border-radius: 100px;
     background-color: var(--accent-full);
+    transition: all .2s ease-in-out;
+}
+
+nav.fixed ul li a{
+    color: transparent;
+}
+
+nav.fixed ul li a:hover,
+nav.fixed ul li a:target{
     color: var(--dark-color);
-    transition: all 300ms ease, border-radius 1ms;
+}
+
+nav ul li a {
+	display: flex;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+    transition: all .2s ease-in-out;
+}
+
+.selected{
+    background-color: var(--accent-full) !important;
 }
 
 section{

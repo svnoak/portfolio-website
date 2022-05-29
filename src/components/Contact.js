@@ -1,7 +1,7 @@
 import contactList from "./data/contact.json";
-function Contact(){
+function Contact(props){
     return(
-        <section id="contact">
+        <section id="contact" ref={props.refs}>
             <h1>Contact</h1>
             <ul>
                 {contactList.map( contact => {

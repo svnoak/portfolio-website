@@ -1,12 +1,11 @@
+import { useInView } from "react-intersection-observer";
 import Navigation from "./Navigation";
 import "../assets/css/Welcome.css";
-function Welcome() {
+function Welcome(props) {
     return(
-        <section id="welcome">
+        <section id="welcome" ref={props.refs}>
             <h1>Welcome</h1>
-            <div className="welcome-navigation">
-                <Navigation />
-            </div>
+                <Navigation views={props.views}/>
             <div className="portrait-section">
                 <img src={require("../assets/images/portrait.jpeg")} alt="Kim looking at the camera, smiling"/>
                 <div className="portrait-description">

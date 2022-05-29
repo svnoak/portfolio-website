@@ -1,5 +1,5 @@
+import { useInView } from "react-intersection-observer";
 import './assets/css/App.css';
-import Navigation from './components/Navigation';
 import Welcome from './components/Welcome';
 import About from './components/About';
 import ProjectList from './components/ProjectsList';
@@ -8,19 +8,40 @@ import Contact from './components/Contact';
 
 function App() {
   window.addEventListener("scroll", () => {
-    if( window.scrollY < 500 ){
-      document.querySelector(".App > nav").style.opacity = 0;
+    
+    if( window.scrollY >= 46 ){
+      document.querySelector("nav").classList.add("fixed");
     } else {
-      document.querySelector(".App > nav").style.opacity = 1;
+      document.querySelector("nav").classList.remove("fixed");
     }
+
   });
+  
+  const [ welcomeRef, welcomeInView ] = useInView({
+    threshold: 0.6
+  });
+  const [ aboutRef, aboutInView ] = useInView({
+    threshold: 0.6
+  });
+  const [ projectRef, projectInView ] = useInView({
+    threshold: 0.6
+  });
+  const [ skillRef, skillInView ] = useInView({
+    threshold: 0.6
+  });
+  const [ contactRef, contactInView ] = useInView({
+    threshold: 0.6
+  });
+
+  const views = [welcomeInView, aboutInView, projectInView, skillInView, contactInView];
+
   return (
     <div className="App">
-      <Welcome />
-      <About />
-      <ProjectList />
-      <Skills />
-      <Contact />
+      <Welcome refs={welcomeRef} inView={welcomeInView} views={views}/>
+      <About refs={aboutRef} inView={aboutInView}/>
+      <ProjectList refs={projectRef} inView={projectInView}/>
+      <Skills refs={skillRef} inView={skillInView}/>
+      <Contact refs={contactRef} inView={contactInView}/>
       <footer>Kim Siebeneicher</footer>
     </div>
   );
