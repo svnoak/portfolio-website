@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
 function Navigation(props) {
     const views = props.views;
     return(

@@ -1,4 +1,3 @@
-import { useInView } from "react-intersection-observer";
 import Navigation from "./Navigation";
 import "../assets/css/Welcome.css";
 function Welcome(props) {
