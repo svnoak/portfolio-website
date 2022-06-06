@@ -7,6 +7,11 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 function App() {
+  
+  /**
+   * Changing style on navigation 
+   * when user scrolls down or reaches top
+   */
   window.addEventListener("scroll", () => {
     
     if( window.scrollY >= 46 ){
@@ -17,6 +22,11 @@ function App() {
 
   });
   
+  /**
+   * *InView variable holds bool for if component is in view or not
+   * Thresholds in decimal for when component is considered in view
+   * Used for focusing on correct navigation-circle scrolling down
+   */
   const [ welcomeRef, welcomeInView ] = useInView({
     threshold: 0.6
   });

@@ -1,10 +1,12 @@
 import skills from "./data/skills.json";
+import "../assets/css/Skill.css";
+
 function Skills(props) {
     return(
         <section id="skills" ref={props.refs}>
             <h1>Skills</h1>
             <div>
-                <div>
+                <div id="skill-lists">
                  {skills.map( section => {
                      return(
                      <div key={section.heading}>
