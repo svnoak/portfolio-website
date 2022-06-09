@@ -6,7 +6,7 @@ function ProjectList(props) {
     return(
         <section id="project-list" ref={props.refs}>
             <h1>Projects</h1>
-            {projects.map( project => <ProjectCard key={project.name} data={project} /> )}
+            {projects.map( project => <ProjectCard key={project.id} data={project} /> )}
         </section>
     )
 }

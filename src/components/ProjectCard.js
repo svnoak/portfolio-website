@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ProjectCard(props) {
     const p = props.data;
     const navClass = p.link ? "project-navigation between" : "project-navigation";
@@ -12,7 +14,7 @@ function ProjectCard(props) {
                 <p>{p.description}</p>
                 <div className={navClass}>
                 {p.link && <a href={p.link}>To project site</a>}
-                <button>Read more</button>
+                <Link to={ "/project/" + p.id } state={{ id: p.id }}>Read more</Link>
                 </div>
             </div>
         </div>

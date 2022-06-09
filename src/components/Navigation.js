@@ -1,4 +1,18 @@
 function Navigation(props) {
+    /**
+    * Changing style on navigation 
+    * when user scrolls down or reaches top
+    */
+    window.addEventListener("scroll", () => {
+        if (document.querySelector("nav")){
+            if( window.scrollY >= 46 ){
+                document.querySelector("nav").classList.add("fixed");
+            } else {
+                document.querySelector("nav").classList.remove("fixed");
+            }
+        }
+    });
+
     const views = props.views;
     return(
     <nav className={props.class}>

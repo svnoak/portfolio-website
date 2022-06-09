@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "title":"FiRe Server",
         "description":"File Renaming Server is a small program to rename files in batches. Back-end part of the project",
         "name":"filrenaming-server",
@@ -8,9 +9,10 @@
         "Role":"['Developer']",
         "long-description":"Lorem ipsum",
         "image":"portrait.jpeg",
-        "link":""
+        "link":"https://github.com/svnoak/filrenaming-server"
     },
     {
+        "id": "2",
         "title":"FiRe Client",
         "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
         "name":"FiRE-CLIENT",
@@ -19,6 +21,66 @@
         "Role":"['Developer']",
         "long-description":"Lorem ipsum",
         "image":"portrait.jpeg",
-        "link":"link.com"
+        "link":"https://github.com/svnoak/FiRE-CLIENT"
+    },
+    {
+        "id": "3",
+        "title":"Wordpress theme",
+        "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
+        "name":"portfolio-theme-wordpress",
+        "techstack": "['VueJS, CSS']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":""
+    },
+    {
+        "id": "4",
+        "title":"Aganju",
+        "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
+        "name":"DBP21-project",
+        "techstack": "['VueJS, CSS']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":"https://aganju.siebeneicher.se/"
+    },
+    {
+        "id": "5",
+        "title":"V.A.R.G",
+        "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
+        "name":"FiRE-CLIENT",
+        "techstack": "['VueJS, CSS']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":"https://prod.svnoak.net"
+    },
+    {
+        "id": "6",
+        "title":"Image Transformer",
+        "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
+        "name":"FiRE-CLIENT",
+        "techstack": "['VueJS, CSS']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":"https://link.com"
+    },
+    {
+        "id": "7",
+        "title":"Portfolio website",
+        "description":"File Renaming client is a small program to rename files in batches. Front-end part of the project",
+        "name":"portfolio-website",
+        "techstack": "['VueJS, CSS']",
+        "Use-case": "Lorem ipsum",
+        "Role":"['Developer']",
+        "long-description":"Lorem ipsum",
+        "image":"portrait.jpeg",
+        "link":"https://siebeneicher.se"
     }
 ]
